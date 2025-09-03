@@ -1,0 +1,682 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'DINEngschrift-AlternateRg';
+    src: url('dinea___-webfont.eot');
+	src: local('☺');
+    src: url('dinea___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dinea___-webfont.woff') format('woff'),
+         url('dinea___-webfont.ttf') format('truetype'),
+         url('dinea___-webfont.svg#DINEngschrift-AlternateRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'GothamBoldRegular';
+    src: url('gotham-bold-webfont.eot');
+	src: local('☺');
+    src: url('gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-bold-webfont.woff') format('woff'),
+         url('gotham-bold-webfont.ttf') format('truetype'),
+         url('gotham-bold-webfont.svg#GothamBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*-------------- INICIO ------------------*/
+html, body{
+	height:100%; background-color:#000000;
+}
+.clear{
+	clear:both;}
+
+.contenedor{
+	position:relative;
+	height:100%;
+	width:100%;
+	background:url(../images/texturaAzul.jpg) fixed;
+	overflow:hidden;
+	}
+.music{
+	position:relative;
+	float:left;
+	width:50%;
+	height:100%;
+	background:url(../images/texturaRoja.jpg) fixed;
+	}
+.design{
+	position:relative;
+	float:left;
+	width:50%;
+	height:100%;
+	}
+.negroM{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#000;
+	z-index:1;
+	}
+.negroD{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#000;
+	z-index:1;
+	}
+.sombra1{
+	position:absolute;
+	width:100%;
+	height:54px;
+	top:0px;
+	left:0px;
+	background:url(../images/sombraTop.png);
+	z-index:2;}
+.sombra2{
+	position:absolute;
+	width:100%;
+	height:54px;
+	bottom:0px;
+	left:0px;
+	background:url(../images/sombraBottom.png);
+	z-index:2;}
+.juan{
+	position:absolute;
+	left:50%;
+	bottom:0px;
+	background:url(../images/juan.png) no-repeat;
+	width:594px;
+	height:585px;
+	margin-left:-285px;
+	z-index:10;}
+.glass{
+	width:198px;
+	height:92px;
+	margin-top:180px;
+	margin-left:179px;
+	background:url(../images/gafas.png) no-repeat;
+	}
+.diagonales{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:url(../images/TexturaRayas.png) fixed  repeat 0 0;
+	z-index:1;
+	}
+	
+/*--------------- MENU FOLLOW ME -----------------*/
+.logo{
+	position:fixed;
+	margin-left:-80px;
+	margin-top:-78px;	
+	top:50%;
+	left:50%;
+	width:237px;
+	height:1012px;
+	overflow:hidden;
+	z-index:100;}
+.menu2{
+	position:relative;
+	width:474px;
+	z-index:5;
+	margin-top:-80px;
+	overflow:hidden;
+	}
+.menuM{
+	position:relative;
+	float:left;
+	margin:33px;
+	margin-top:0px;
+	width:171px;
+	overflow:hidden;
+	}
+.linksM{
+	position:relative;
+	margin:0px auto;
+	width:69px;
+	overflow-x:hidden;
+	margin-top:-20px;
+	padding-top:20px;
+	}
+.mascara{
+	position:relative;
+	margin:0px;
+	height:500px;
+	z-index:200;}
+.linksM img{
+	margin-top:-35px;
+	}
+.menuD{
+	position:relative;
+	float:left;
+	margin:33px;
+	margin-top:-74px;
+	width:171px;
+	overflow:hidden;}
+.linksD{
+	position:relative;
+	margin:0px auto;
+	width:69px;
+	overflow-x:hidden;
+	margin-top:-20px;
+	padding-top:20px;
+	}
+.linksD img{
+	margin-top:-35px;
+	}
+#followM{
+	cursor:pointer;
+	}
+#followD{
+	cursor:pointer;
+	}
+.toolM{
+	position:absolute;
+	padding:5px;
+	display:block;
+	background:#000;
+	font-size:18px;
+	color:#FFF;
+	font-family: 'DINEngschrift-AlternateRg';
+	z-index:1000;
+	}
+.toolD{
+	position:absolute;
+	float:right;
+	padding:5px;
+	display:block;
+	background:#000;
+	font-size:16px;
+	color:#FFF;
+	text-align:right;
+	font-family: 'DINEngschrift-AlternateRg';
+	z-index:1000;
+	}
+
+/*-------------- MENUI ------------------*/
+
+.boxM{
+	position:absolute;
+	top:50%;
+	right:125px;
+	z-index:15;
+	margin-top:-75px;}
+.boxD{
+	position:absolute;
+	top:50%;
+	left:110px;
+	z-index:16;
+	margin-top:-75px;}
+.btnMusic1{
+	position:relative;
+	width:342px;
+	height:150px;
+	display:block;
+	overflow:hidden;}
+.btnDesign1{
+	position:relative;
+	width:375px;
+	height:150px;
+	display:block;
+	overflow:hidden;}
+.masM{
+	position:absolute;
+	top:40px;
+	left:-35px;
+	width:70px;
+	height:70px;
+	overflow:hidden;}
+.masD{
+	position:absolute;
+	top:40px;
+	right:-20px;
+	width:70px;
+	height:70px;
+	overflow:hidden;}
+.boxM h1{
+	position:relative;
+	padding:0px;
+	display:block;
+	width:auto;
+	margin:0px;
+	text-align:left;
+	margin-top:0px;
+	}
+.boxM h2{
+	position:relative;
+	color:#444444;
+	font-size:20px;
+	font-family: 'DINEngschrift-AlternateRg';
+	padding:5px;
+	background:#000;
+	display:block;
+	width:170px;
+	margin:2px;
+	text-align:right;
+	margin-left:144px;
+	}
+.boxD h1{
+	position:relative;
+	padding:0px;
+	display:block;
+	width:auto;
+	margin:0px;
+	text-align:left;
+	margin-top:0px;
+	}
+.boxD h2{
+	position:relative;
+	color:#444444;
+	font-size:20px;
+	font-family: 'DINEngschrift-AlternateRg';
+	padding:5px;
+	background:#000;
+	display:block;
+	width:123px;
+	margin:2px;
+	text-align:right;
+	margin-left:183px;
+	}
+/*------------------- MENU 2 --------------------------*/
+
+.btnMusic2{
+	position:fixed;
+	top:50%;
+	right:0px;
+	margin-top:-65px;
+	margin-right:-250px;
+	width:250px;
+	height:187px;
+	background:url(../images/btnMusic2.png);
+	cursor:pointer;
+	z-index:1000;
+	}
+.btnDesign2{
+	position:fixed;
+	top:50%;
+	left:0px;
+	margin-top:-65px;
+	margin-left:-250px;
+	width:250px;
+	height:187px;
+	background:url(../images/btnDesign2.png);
+	cursor:pointer;
+	z-index:1000;
+	}
+/*-------------- CONTENIDO MUSIC ------------------*/
+.contenidoM{
+	position:relative;
+	margin:0px auto;
+	top:50%;
+	width:1001px;
+	z-index:2;}
+.headM{
+	margin:0px auto;
+	width:1001px;
+	height:421px;
+	background:url(../images/music1.png);
+	margin-top:-200px;
+	}
+.footerM{
+	margin:0px auto;
+	position:absolute;
+	top:0%;
+	width:1001px;
+	height:421px;
+	background:url(../images/music2.png);
+	}
+.proyectosM{
+	margin:0px auto;
+	width:850px;
+	height:auto;
+	margin-bottom:70px;
+	z-index:5;
+	}
+.yt_holder{
+	position:relative;
+	z-index:5;
+	}
+.proyectosM h1{
+	font-family: 'GothamBoldRegular';
+	font-size:60px;
+	letter-spacing:-5px;
+	color:#FFF;
+	margin-bottom:5px;
+	}
+.proyectosM h2{
+	font-family: 'DINEngschrift-AlternateRg';
+	font-size:30px;
+	color:#fff;
+	display:block;
+	background:#000;
+	width:120px;
+	padding:5px;
+	margin-bottom:25px;
+	}
+.ytvideo{
+	position:relative;
+	background:url(../images/TextuRoja.png);
+	padding:10px;
+	margin-bottom:50px;
+	z-index:5;}
+.NS{
+	position:absolute;
+	width:184px;
+	height:112px;
+	left:-14px;
+	top:117px;
+	background:url(../images/NewSong1.png);
+	z-index:6;
+	}
+.sombraV{
+	position:absolute;
+	width:788px;
+	height:224px;
+	left:96px;
+	top:920px;
+	background:url(../images/Sombra1.png);
+	z-index:1;
+	}
+.demo1{
+	margin-top:25px;
+	width:850px;
+	height:120px;
+	}
+.demo1 li{
+	float:left;
+	margin-right:20px;}
+.demo1 li a{
+	text-decoration:none;}
+.demo1 li img{
+	padding:1px;
+	background:#D59191;}
+.demo1 li img:hover{
+	padding:1px;
+	background:none;}
+.demo1 li h2{
+	font-family: 'GothamBoldRegular';
+	font-size:19px;
+	letter-spacing:-1px;
+	color:#FFF;
+	margin-top:2px;
+	background:none;
+}
+
+
+/*-------------- CONTENIDO DESIGN ------------------*/
+.contenidoD{
+	position:relative;
+	margin:0px auto;
+	top:50%;
+	width:1001px;
+	z-index:2;}
+.headD{
+	margin:0px auto;
+	width:1001px;
+	height:421px;
+	background:url(../images/design1.png);
+	margin-top:-200px;
+	
+	}
+.footerD{
+	margin:0px auto;
+	position:absolute;
+	top:0%;
+	width:1001px;
+	height:421px;
+	background:url(../images/design2.png);
+	}
+.proyectosD{
+	width:100%;
+	height:auto;
+	margin-top:10px;
+	margin-bottom:30px;
+	}
+.subD{
+	position:relative;
+	margin:0px auto;
+	width:410px;
+	height:44px;
+	margin-bottom:20px;
+	text-align:center;
+	}
+.subD a{
+	float:left;
+	display:block;
+	background:url(../images/TextuAzul2.png);
+	width:121px;
+	height:41px;
+	margin-left:13px;
+	padding-top:3px;
+	color:#FFF;
+	font-family: 'DINEngschrift-AlternateRg';
+	font-size:40px;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;}
+.subD a:hover{
+	background:url(../images/TextuAzul1.png);
+	}
+.subD span{
+	background:url(../images/raya.png) center repeat-x;
+	width:50px;
+	height:44px;
+	margin-left:13px;
+	display:block;
+	float:left;
+	}
+.mascaraD{
+	margin:0px auto;
+	width:972px;
+	height:auto;
+	overflow:hidden;
+	}
+.reelD{
+	position:relative;
+	margin-top:10px;
+	width:1944px;
+	height:auto;
+	}
+.proyectoD{
+	margin-top:10px;
+	width:972px;
+	height:auto;
+	float:left;
+}
+.proyectoD ul li{
+	position:relative;
+	width:311px;
+	height:275px;
+	float:left;
+	margin-left:13px;
+	margin-bottom:13px;
+	cursor:pointer;
+	}
+.proyectoD li img{
+	position:relative;
+	padding:7px;
+	display:block;
+	background:url(../images/TextuAzul3.png);
+	z-index:20px;
+	}
+.proyectoD li h1{
+	color:#FFF;
+	font-family: 'GothamBoldRegular';
+	font-size:25px;
+	letter-spacing:-1px;
+	margin-top:6px;
+	margin-left:7px;
+	}
+.proyectoD li h2{
+	position:absolute;
+	color:#FFF;
+	font-family: 'DINEngschrift-AlternateRg';
+	padding:5px;
+	display:block;
+	background:#005566;
+	font-size:20px;
+	margin-top:6px;
+	margin-left:7px;
+	}
+.ND{
+	position:absolute;
+	background:url(../images/NewDesign1.png);
+	width:184px;
+	height:112px;
+	top:-13px;
+	left:-13px;
+	z-index:500;}
+.sombra3{
+	position:absolute;
+	background:url(../images/Sombra2.png);
+	width:268px;
+	height:75px;
+	top:140px;
+	left:25px;
+	z-index:0;}
+.menuReel{
+	position:relative;
+	margin:0px auto;
+	width:140px;
+	height:44px;
+	text-align:center;
+	}
+.menuReel a{
+	float:left;
+	display:block;
+	background:url(../images/btnSlider2.png);
+	width:23px;
+	height:22px;
+	margin-left:7px;
+	cursor:pointer;
+}
+.menuReel span{
+	background:url(../images/raya.png) center repeat-x;
+	width:30px;
+	height:22px;
+	margin-left:7px;
+	display:block;
+	float:left;
+	}
+.menuReel h1{
+	position:absolute;
+	color:#FFF;
+	font-family: Tahoma, Geneva, sans-serif;
+	padding:5px;
+	display:block;
+	background:url(../images/TextuAzul3.png);
+	font-size:14px;
+	top:30px;
+	left:53px;
+	}
+/*-------------- PROYECTOS DESIGN ------------------*/
+.loadD{
+	position:relative;
+	width:100%;
+	text-align:center;
+	background:url(../images/TextuNegra3.jpg);
+	}
+.margen{
+	width:100%;
+	height:15px;
+	background:url(../images/TextuNegra2.jpg);
+	}
+.cerrarX{
+	margin:20px auto;
+	width:34px;
+	height:33px;
+	background:url(../images/btnCerrar.png) no-repeat;;
+	cursor:pointer;
+	}
+.loadD h1{
+	margin:0px auto;
+	margin-top:10px;
+	margin-bottom:3px;
+	color:#999;
+	font-family: 'DINEngschrift-AlternateRg';
+	font-size:30px;
+	}
+hr{
+	color:#666;
+	background-color:#666;
+	border-color:#666;
+	width:250px;
+	height: 1px;
+	border: 0;
+	margin:0px auto;}
+.loadD h2{
+	margin:0px auto;
+	margin-top:5px;
+	color:#fff;
+	font-family: 'DINEngschrift-AlternateRg';
+	font-size:60px;
+	}
+.loadD h3{
+	margin:0px auto;
+	margin-top:10px;
+	color:#999;
+	font-family: 'DINEngschrift-AlternateRg';
+	font-size:30px;
+	margin-bottom:50px;
+	}
+.loadD img{
+	margin:0px auto;
+	margin-bottom:30px;
+	display:block;
+	padding:5px;
+	background:url(../images/TextuNegra4.jpg);
+	}
+.about{
+	margin:30px auto;
+	width:734px;
+	height:1482px;
+	background:url(../images/about.png);
+	}
+.contact{
+	position:relative;
+	margin:30px auto;
+	width:734px;
+	height:744px;
+	background:url(../images/contact.png);
+	}
+.contact h1{
+	position:absolute;
+	top:400px;
+	left:46px;
+	color:#FFF;
+	font-family: 'DINEngschrift-AlternateRg';
+	font-size:80px;
+	}
+
+	
